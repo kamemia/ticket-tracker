@@ -1,7 +1,8 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Tickets from './components/Tickets.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <Tickets />
 </template>
