@@ -1,5 +1,53 @@
-# Vue 3 + Vite
+# Mini Ticket Tracker (Frontend)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue 3 + Vite + Vuetify client for the Mini Ticket Tracker API.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Prerequisites
+
+- Node.js 18+
+- Git
+- The Django API running locally (see the backend README)
+
+## Setup
+
+1. Clone the repository and enter the project directory:
+
+```bash
+   git clone https://github.com/kamemia/ticket-tracker.git
+   cd ticket-tracker
+```
+
+2. Install dependencies:
+
+```bash
+   npm install
+```
+
+3. Copy the example env file and set the API URL:
+
+```bash
+   cp .env.example .env
+```
+
+```env
+   VITE_BASE_API_URL=http://127.0.0.1:8000
+```
+
+4. Start the dev server:
+
+```bash
+   npm run dev
+```
+
+   The app is available at http://localhost:5173.
+
+## Scripts
+
+| Command           | Description                      |
+| ----------------- | -------------------------------- |
+| `npm run dev`     | Start the dev server             |
+| `npm run build`   | Build for production to `dist/`  |
+| `npm run preview` | Preview the production build     |
+
+## Notes
+Ensure the backend server is running.
