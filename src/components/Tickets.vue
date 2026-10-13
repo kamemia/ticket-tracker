@@ -10,7 +10,7 @@
             </v-col>
         </v-row>
         <div class="d-flex align-center justify-space-between mt-5">
-            <v-select v-model="statusFilter" :items="filterItems" label="Status" density="compact" variant="outlined"
+            <v-select  v-model="statusFilter" :items="filterItems" label="Status" density="compact" variant="outlined"
                 clearable hide-details style="max-width: 200px" />
             <v-btn color="primary" @click="openDialog(null)">New ticket</v-btn>
         </div>

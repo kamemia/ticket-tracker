@@ -3,13 +3,15 @@
         <v-card :title="isEdit ? 'Edit ticket' : 'New ticket'">
             <v-card-text>
                 <v-text-field
+                variant="outlined"
+                density="compact"
                     v-model="form.title"
                     label="Title"
                     :rules="[v => !!v || 'Title is required']"
                 />
-                <v-textarea v-model="form.description" label="Description" rows="3" />
-                <v-select v-model="form.status" label="Status" :items="statuses" />
-                <v-select v-model="form.priority" label="Priority" :items="priorities" />
+                <v-textarea variant="outlined" v-model="form.description" label="Description" rows="3" />
+                <v-select variant="outlined" density="compact" v-model="form.status" label="Status" :items="statuses" />
+                <v-select variant="outlined" density="compact" v-model="form.priority" label="Priority" :items="priorities" />
             </v-card-text>
             <v-card-actions>
                 <v-spacer />
